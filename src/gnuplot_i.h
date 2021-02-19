@@ -176,6 +176,30 @@ void gnuplot_set_ylabel(gnuplot_ctrl * h, char * label);
 
 /*-------------------------------------------------------------------------*/
 /**
+  @brief    Sets the terminal of a gnuplot session.
+  @param    h Gnuplot session control handle.
+  @param    terminal gnuplot terminal name.
+  @return   void
+
+  Sets the terminal for a gnuplot session.
+ */
+/*--------------------------------------------------------------------------*/
+void gnuplot_set_terminal(gnuplot_ctrl *h, char *terminal);
+
+/*-------------------------------------------------------------------------*/
+/**
+  @brief    Sets the output name of a gnuplot session.
+  @param    h Gnuplot session control handle.
+  @param    output file name.
+  @return   void
+
+  Sets the output for a gnuplot session.
+ */
+/*--------------------------------------------------------------------------*/
+void gnuplot_set_output(gnuplot_ctrl *h, char *output);
+
+/*-------------------------------------------------------------------------*/
+/**
   @brief    Resets a gnuplot session (next plot will erase previous ones).
   @param    h Gnuplot session control handle.
   @return   void
